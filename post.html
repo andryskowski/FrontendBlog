@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<title></title>
+	<link rel="stylesheet" href="css/fontello.css" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<meta name="description" content="Opis w Google" />
+	<meta name="keywords" content="słowa, kluczowe, wypisane, po, porzecinku" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&family=Lato&family=Open+Sans&display=swap"
+		rel="stylesheet">
+	<script src="jquery-3.5.1.min.js"></script>
+	<script>
+
+		$(document).ready(function () {
+			var NavY = $('.nav').offset().top;
+
+			var stickyNav = function () {
+				var ScrollY = $(window).scrollTop();
+
+				if (ScrollY > NavY) {
+					$('.nav').addClass('sticky');
+				} else {
+					$('.nav').removeClass('sticky');
+				}
+			};
+
+			stickyNav();
+
+			$(window).scroll(function () {
+				stickyNav();
+			});
+		});
+
+	</script>
+</head>
+
+<body>
+
+	<header>
+		<div id="slider">
+			<h1>Blog Stanisław Andryskowski</h1>
+		</div>
+
+		<nav class="navbar navbar-dark bg-navbar navbar-expand-lg">
+			<a class="navbar-brand" href="#"><img src="" width="30" height="30" class="d-inline-block mr-3 " alt=""></a>
+
+			<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#mainmenu"><span
+					class="navbar-toggler-icon" aria-controls="mainmenu" aria-expanded="false"
+					aria-label="Przelacznik nawigacji"></span></button>
+
+			<div class="collapse navbar-collapse" id="mainmenu">
+
+				<ul class="navbar-nav mr-auto">
+
+					<li class="nav-item active">
+						<a class="nav-link" href="home.html"> Start </a>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button"
+							aria-expanded="false" id="submenu"> Bla bla </a>
+						<div class="dropdown-menu" aria-labelledby="submenu" aria-haspopup="true">
+
+							<a class="dropdown-item" href="#">Terminarz zawodow</a>
+
+							<div class="dropdown-divider"></div>
+
+							<a class="dropdown-item" href="#">Terminarz zawodow</a>
+
+						</div>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#"> O mnie </a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#"> Kontakt </a>
+					</li>
+
+
+				</ul>
+
+
+				<form class="form-inline mr-1">
+					<input class="form-control" type="search" placeholder="Wyszukaj" aria-label="wyszukaj">
+					<button class="btn btn-light" type="submit">Znajdź</button>
+				</form>
+			</div>
+		</nav>
+
+	</header>
+
+	<section>
+		<img src="img/reklama.jpg"   class="img-fluid advert"  alt="" >
+	</section>
+
+	<main>
+		<article class="post">
+
+
+			<h1>Oto post numer jeden</h1>
+			<h2 class="dateauthor" >Author: <span style="font-weight: bold;"> Andryskowski</span> Date: 2020 | 02 | 07
+				13:35
+			</h2>
+			<p style="margin-top: 0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet, nisl non viverra pharetra, sem
+				magna accumsan dolor, ac ullamcorper mauris ex eu libero. Sed elementum eros a euismod mollis. Mauris
+				ultrices tincidunt eros ac dapibus. Etiam sapien libero, viverra ac purus a, tempus luctus lacus.
+				Integer porta erat lorem, id condimentum arcu sodales ut. Etiam auctor mi ac eleifend porta. Quisque
+				tempor luctus justo id faucibus. Mauris a urna eleifend, pharetra nibh nec, vestibulum lacus. Maecenas
+				neque sapien, tempus quis molestie et, sodales quis orci. Aenean ut eleifend justo. Donec sapien augue,
+				suscipit id eros id, congue iaculis urna. Nunc et lectus nec sem luctus euismod vel vitae magna. Proin
+				vitae tortor magna. In ultricies cursus neque, sed venenatis elit aliquet eget.
+
+				Morbi viverra lacinia ultrices. Proin sollicitudin sem at justo ultrices, non consectetur velit
+				condimentum. Fusce bibendum lacinia vulputate. Nulla lobortis, turpis aliquam fringilla facilisis, ante
+				urna vulputate nisi, mollis accumsan turpis erat id neque. Aenean pretium, tellus eget tempor blandit,
+				lorem ex tincidunt ante, in bibendum metus urna eu ligula. Proin nec odio eu lectus tincidunt convallis.
+				Nam pretium, eros sit amet mollis pretium, urna massa scelerisque dui, nec tempor lacus nunc vitae
+				metus. Integer tincidunt et justo nec viverra. Donec tincidunt consequat ullamcorper. Maecenas
+				consectetur diam at tortor pretium tristique. Morbi lectus nulla, sollicitudin et odio mattis, finibus
+				dignissim nunc. Nunc aliquet consectetur est, sed luctus erat vehicula id. Curabitur vel faucibus lorem.
+				Maecenas euismod dui nisl, et venenatis elit congue at. Sed semper scelerisque sapien sit amet tempor.
+				Proin at justo auctor, placerat neque ornare, venenatis felis.
+
+				Curabitur laoreet malesuada lacus ornare luctus. Nam vel odio eget dolor ullamcorper dapibus. Integer
+				tristique orci non justo condimentum, non bibendum ante molestie. Donec scelerisque ut metus sit amet
+				scelerisque. Vivamus sed nunc ut ipsum venenatis gravida. Cras in eleifend velit. Donec imperdiet massa
+				a hendrerit dignissim. Duis sodales purus eget turpis semper bibendum. Nullam laoreet, sem a tristique
+				sodales, leo justo lobortis felis, at condimentum nisi ante ac risus. Etiam rutrum enim tortor, ultrices
+				eleifend nibh finibus ut. Nunc vehicula quis urna ac faucibus. Donec erat dolor, dictum ut orci at,
+				consequat cursus nisl. Nullam risus odio, maximus ut dignissim scelerisque, ornare mollis velit. Nam
+				lobortis vulputate nibh quis aliquet. Proin ex metus, consectetur ut urna at, egestas euismod lectus.
+
+				Sed id venenatis leo. Aliquam erat massa, vehicula nec egestas in, lobortis et nisl. Aliquam et tempus
+				nisi, ac tincidunt neque. In quis nulla nunc. Suspendisse sit amet sapien et nulla egestas rutrum. Proin
+				dictum, risus et rhoncus interdum, ligula mauris ullamcorper lorem, suscipit laoreet mi velit ut orci.
+				Aliquam erat volutpat.
+
+				Etiam erat leo, viverra pellentesque magna nec, </p>
+
+			<section name="comment">
+
+				<div class="comment">
+					<div class="comphoto">
+						<div class="adult"><i class="icon-adult"></i></div></i>
+					</div>
+					<div class="comcontent">
+						<h1>Comment #1</h1>
+						<p>Lorem ipsum Morbi viverra lacinia ultrices. Proin sollicitudin sem at justo ultrices, non
+							consectetur Morbi consectetur Morbi consectetur Morbi consectetur Morbi
+							viverra lacinia ultrices. Proin sollicitudin sem at justo ultrices, non consectetur Morbi
+							viverra lacinia
+							ultrices. Proin sollicitudin sem at justo ultrices, non consectetur siapifend porta. </p>
+						<h2 class="dateauthor" style="margin-top: 0">Author: <span style="font-weight: bold; ">
+								Andryskowski</span> Date: 2020 | 02 | 07 13:35</h2>
+					</div>
+					<div style="clear:both"></div>
+				</div>
+
+				<div class="comment">
+					<div class="comphoto">
+						<div class="adult"><i class="icon-adult"></i></div></i>
+					</div>
+					<div class="comcontent">
+						<h1>Comment #2</h1>
+						<p>Lorem ipsum Morbi viverra lacinia ultrices. Proin sollicitudin sem at justo ultrices, non
+							consectetur Morbi
+							viverra lacinia ultrices. Proin sollicitudin sem at justo ultrices, non consectetur Morbi
+							viverra lacinia
+							ultrices. Proin sollicitudin sem at justo ultrices, non consectetur siapifend porta. </p>
+						<h2 class="dateauthor" style="margin-top: 0">Author: <span style="font-weight: bold; ">
+								Andryskowski</span> Date: 2020 | 02 | 07 13:35</h2>
+					</div>
+					<div style="clear:both"></div>
+				</div>
+
+				<div class="comment">
+					<div class="comphoto">
+						<div class="adult"><i class="icon-adult"></i></div></i>
+					</div>
+					<div class="comcontent">
+						<h1>Comment #3</h1>
+						<p>Lorem ipsum Morbi viverra lacinia ultrices. Proin sollicitudin sem at justo ultrices, non
+							consectetur Morbi
+							viverra lacinia ultrices. Proin sollicitudin sem at justo ultrices, non consectetur Morbi
+							viverra lacinia
+							ultrices. Proin sollicitudin sem at justo ultrices, non consectetur siapifend porta. </p>
+						<h2 class="dateauthor" style="margin-top: 0">Author: <span style="font-weight: bold; ">
+								Andryskowski</span> Date: 2020 | 02 | 07 13:35</h2>
+					</div>
+					<div style="clear:both"></div>
+				</div>
+
+			</section>
+
+
+		</article>
+		<aside>
+			<nav>
+				<div id="navright">
+					<ol>
+						<h3><span style="font-weight: bold;">Wpisy</span></h3>
+						<li><a href="#">Wpisy w 2020 (4)</a>
+							<ul>
+								<li><a href="#">Tatry</a></li>
+								<li><a href="#">Pieniny</a></li>
+								<li><a href="#">Beskid Śląski</a></li>
+								<li><a href="#">Beskid Mały</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Wpisy w 2019 (4)</a>
+							<ul>
+								<li><a href="#">Beskid Makowski</a></li>
+								<li><a href="#">Beskid Żywiecki</a></li>
+								<li><a href="#">Gorce</a></li>
+								<li><a href="#">Beskid Sądecki</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Wpisy w 2018 (4)</a>
+							<ul>
+								<li><a href="#">Góry Stołowe</a></li>
+								<li><a href="#">Masyw Śnieżka</a></li>
+								<li><a href="#">Góry Złote</a></li>
+								<li><a href="#">Góry Opawskie</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Wpisy w 2017 (5)</a>
+							<ul>
+								<li><a href="#">Masyw Śnieżka</a></li>
+								<li><a href="#">Góry Bialskie</a></li>
+								<li><a href="#">Góry Złote</a></li>
+								<li><a href="#">Góry Opawskie</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Wpisy w 2016 (0)</a></li>
+					</ol>
+				</div>
+			</nav>
+			<div style="clear:both"></div>
+		</aside>
+	</main>
+
+	<footer>
+
+		<div id="footer">
+			<div class="row ">
+			<div class="yt col-12 col-sm-6 col-md-3">
+				<i class="icon-youtube-squared"></i>
+			</div>
+			<div class="fb col-12 col-sm-6 col-md-3">
+				<i class="icon-facebook-squared"></i>
+			</div>
+		
+			<div class="tw col-12 col-sm-6 col-md-3">
+				<i class="icon-twitter-squared"></i>
+			</div>
+			<div class="gplus col-12 col-sm-6 col-md-3">
+				<i class="icon-gplus-squared"></i>
+			</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
