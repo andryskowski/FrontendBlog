@@ -5,21 +5,27 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
-#slider{
-    width:70vw;
-    margin-left: auto;
+.slider{
+    width:72vw;
     margin-right: auto;
+    margin-left: auto;
     margin-top: 2vh;
-    z-index: 100;
-    background-image: url("img/forest.jpg");
+    background: url('img/01.png');
     background-repeat: no-repeat;
-    background-size: 70vw;
+    margin-bottom: 1%;
     background-position: 35% 35%;
     border-radius: 5px;
+
     
 }
 
-#slider > h1{
+.navbar{
+    max-width: 72vw;
+    margin: none;
+    float: none;
+}
+
+.slider > h1{
     font-size: 25px;
     opacity: 60%;
     padding: 4% 4%;
@@ -65,7 +71,7 @@ body{
     border-radius: 5px;
     color: black;
     font-size: 15px;
-    
+    min-width: 90px;
 }
 
 .dateauthor{
@@ -227,8 +233,8 @@ a:visited{
 }
 
 .bg-navbar{
-    background-color: green;
-    width: 70vw;
+    background-color: rgb(2, 97, 2);
+    width: 71vw;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.5em;
@@ -241,11 +247,13 @@ a:visited{
 
 ol > li > ul{
     display: none;
+    
 }
 
 ol{
     margin-top: 4%;
     list-style-type: upper-roman;
+    
 }
 
 ol > li:hover > ul
@@ -261,4 +269,10 @@ ol > li:hover > ul
     margin-top: 1%;
     width: 65vw;
 }
+
+
+.navbar .nav > .active a:hover, .navbar .nav > li a:hover, .navbar .nav > .active a and .navbar .nav > li a {
+    margin: 0.5em 0;
+}
+
 
